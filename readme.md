@@ -1,1 +1,1 @@
-Dette er mitt GitHub repo.
+Dette er mitt GitHub repo for UIN.

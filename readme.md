@@ -1,1 +1,3 @@
-Dette er mitt GitHub repo.
+Dette er mitt UIN GitHub repo.
+
+~ Ole Martin Røsand

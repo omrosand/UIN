@@ -114,7 +114,7 @@ button {
 
 /* Media Query */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
     section {
         display: flex;
         flex-direction: column;

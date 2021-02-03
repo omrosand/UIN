@@ -194,7 +194,7 @@ try {
 		// a = b;
 		// b = tmp; 
 
-		
+		[a, b] = [b, a];
 
 		// Don't make changes below this line	
 		

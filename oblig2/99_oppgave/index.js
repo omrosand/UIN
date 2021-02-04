@@ -190,9 +190,6 @@ try {
 		
 		// Use array destructuring to change the 3 statements below into 1 statement.
 		// You should not need a temporary variable anymore.
-		// let tmp = a;
-		// a = b;
-		// b = tmp; 
 
 		[a, b] = [b, a];
 
@@ -205,7 +202,7 @@ try {
 	})();
 
 
-  /*
+
 	(function UseObjectDestructuring1() {
 		let obj = {
 			name: 'Oslo',
@@ -214,9 +211,8 @@ try {
 		}
 		
 		// Use object destructuring to change the 3 statements below into 1 statement.
-		let name = obj.name;
-		let age = obj.age;
-		let add = obj.add;
+
+		let {name, age, add} = obj;
 
 		// Don't make changes below this line	
 		
@@ -226,13 +222,13 @@ try {
 		
 		solved++;
 	})();
-	*/
 
-  /*
+
+  
   (function UseParameterDestructuring1() {
     // Adjust the code to let the test succeed.
 
-    const a = 'Oslo' + 985;
+    const a = ['Oslo', 985];
 
     // Don't make changes below this line
 
@@ -245,13 +241,13 @@ try {
 
     solved++;
   })();
-	*/
 
-  /*
+
+
   (function UseParameterDestructuring2() {
     // Adjust the code to let the test succeed.
 
-    const a = 'Oslo' + 985;
+    const a = {name: 'Oslo', age: 985};
 
     // Don't make changes below this line
 
@@ -264,21 +260,18 @@ try {
 
     solved++;
   })();
-	*/
+
 
   /// Property shorthand ///
 
-  /*
+  
 	(function UsePropertyShorthand() {
 		const name = 'Oslo';
 		const age = 985;
 		const norwegian = true;
 		
 		// Remove all unnecesary syntax to let the test pass.
-		let city = {
-			name: name,
-			age: age,
-			dutch: !norwegian
+		let city = { name, age, dutch: !norwegian
 		};
 
 		// Don't make changes below this line	
@@ -287,16 +280,16 @@ try {
 		
 		solved++;
 	})();
-	*/
+	
 
   /// Object Spread Properties (ES2018) ///
 
-  /*
+  
 	(function UseObjectSpreadProperties1() {
 		let obj = { val: 1 };
 		
 		// Use Object Spread Properties to let the tests succeed.
-		let copy = obj;
+		let copy = {...obj};
 
 		// Don't make changes below this line	
 		
@@ -307,9 +300,9 @@ try {
 
 		solved++;
 	})();
-	*/
 
-  /*
+
+  
 	(function UseObjectSpreadProperties2() {
 		let obj1 = { a: 100, b: 2, c: 300 };
 		let obj2 = { b: 0, d: 100, e: 200};
@@ -319,7 +312,7 @@ try {
 		// - Do NOT use Object.assign()
 		// - Do use object spread properties
 		// - Think about the order!
-		let result = { obj1, obj2, obj3 };
+		let result = { a: obj1.a, c: obj3.c, ...obj2 };
 
 		// Don't make changes below this line	
 		
@@ -331,7 +324,7 @@ try {
 
 		solved++;
 	})();
-	*/
+	
 
   ////// BONUS //////
 

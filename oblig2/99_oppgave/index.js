@@ -312,7 +312,7 @@ try {
 		// - Do NOT use Object.assign()
 		// - Do use object spread properties
 		// - Think about the order!
-		let result = { a: obj1.a, c: obj3.c, ...obj2 };
+		let result = { a: obj1.a, ...obj2, c: obj3.c };
 
 		// Don't make changes below this line	
 		

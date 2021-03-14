@@ -1,8 +1,8 @@
 import sanityClient from "@sanity/client";
 
 const options = {
-    projectId: process.env.SANITY_PROJECT_ID,
-    dataset: process.env.SANITY_DATASET_NAME,
+    projectId: 'z5d75xew',
+    dataset: 'production',
 };
 
 const client = sanityClient({

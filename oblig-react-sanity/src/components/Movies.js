@@ -2,18 +2,18 @@ import { useState } from "react";
 import { getMovies } from "../movieService";
 
 const Movies = () => {
-    const [data, setData] = useState([]);
+    const [movies, setMovies] = useState([]);
 
     const handleClick = async() => {
-        const movies = await getMovies();
-        setData(movies);
+        const data = await getMovies();
+        setMovies(data);
     };
 
     return (
     <>
         <h2>The Movies</h2>
         <button type="button" onClick={handleClick}>Hent filmer</button>
-        {data?.length > 0 ? <p>{JSON.stringify(data)}</p> : null}
+        {movies?.length > 0 ? <p>{JSON.stringify(movies)}</p> : null}
     </>
 )}
 

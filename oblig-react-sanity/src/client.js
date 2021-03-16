@@ -1,9 +1,8 @@
 import sanityClient from "@sanity/client";
 
 const options = {
-    // Her skjedde det noen bugs. Marius sa jeg kunne legge det her for å omgå det for nå
-    projectId: 'z5d75xew',
-    dataset: 'production',
+    projectId: process.env.REACT_APP_SANITY_PROJECT_ID,
+    dataset: process.env.REACT_APP_SANITY_DATASET_NAME,
 };
 
 const client = sanityClient({

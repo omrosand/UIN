@@ -1,11 +1,13 @@
 import Movies from "./components/Movies";
+import Theme from "./styles/Theme";
 
 function App() {
   return (
-    <div>
-      <h1>My Oblig App</h1>
+    <Theme>
+      <h1>My React and Sanity App</h1>
+      <p>Ole Martin Røsand</p>
       <Movies/>
-    </div>
+    </Theme>
   );
 }
 
